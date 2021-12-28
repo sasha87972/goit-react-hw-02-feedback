@@ -17,9 +17,9 @@ const Statistics = ({ items, TotalFeedback, PositiveFeedback, state }) => {
   );
 };
 Statistics.propTypes = {
-  TotalFeedback: PropTypes.func.isRequired,
-  PositiveFeedback: PropTypes.func.isRequired,
-  state: propTypes.shape.isRequired,
+  TotalFeedback: PropTypes.number.isRequired,
+  PositiveFeedback: PropTypes.number.isRequired,
+  state: propTypes.array.isRequired,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
